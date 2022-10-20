@@ -1,6 +1,5 @@
 flask
 spacy
-webbrowser
 json
 os
 pprint
