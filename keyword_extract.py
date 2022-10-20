@@ -46,16 +46,17 @@ def extract_noun(text):
 
 if __name__ == "__main__":
     print()
-    fd = open('/Users/alextai/Documents/CS338/VanGogh.txt', 'r')
+    #fd = open('/Users/alextai/Documents/CS338/VanGogh.txt', 'r')
     #fd = open('/Users/alextai/Documents/CS338/Movies.txt', 'r')
     #fd = open('/Users/alextai/Documents/CS338/TheBean.txt', 'r')
-    txt = fd.read()
-    fd.close()
+    #txt = fd.read()
+    #fd.close()
     #txt = "Textrank is a Python tool that extracts keywords and summarises text. The algorithm determines how closely words are related by looking at whether they follow one another. The most important terms in the text are then ranked using the PageRank algorithm. Textrank is usually compatible with the Spacy pipeline. Here are the primary processes Textrank does while extracting keywords from a document."
     
     #IDEA: SEARCH ENTITIES AND NOUNS SEPARATELY
     #IDEA: if work_of_art, use image search. If person, use bing entity search and news search. If place, use map search and news search? If product, use shopping? If org, use news?
     
+    txt = "Last week I saw a Vincent Van Gogh painting at the Art Institute of Chicago"
     ents = extract_ent(txt)
     for ent in ents:
         webbrowser.open_new(url="https://www.bing.com/images/search?q="+ent)

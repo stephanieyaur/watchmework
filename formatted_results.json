@@ -1,0 +1,1017 @@
+{
+    "_type":"SearchResponse",
+    "entities":{
+        "value":[
+            {
+                "bingId":"2139c867-ec5a-5576-5987-9a4079e0f07c",
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/LicenseAttribution",
+                        "license":{
+                            "name":"CC-BY-SA",
+                            "url":"http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice":"Text under CC-BY-SA license",
+                        "mustBeCloseToContent":true,
+                        "targetPropertyName":"description"
+                    },
+                    {
+                        "_type":"ContractualRules/LinkAttribution",
+                        "mustBeCloseToContent":true,
+                        "targetPropertyName":"description",
+                        "text":"Wikipedia",
+                        "url":"http://en.wikipedia.org/wiki/Vincent_van_Gogh"
+                    }
+                ],
+                "description":"Vincent Willem van Gogh was a Dutch Post-Impressionist painter who posthumously became one of the most famous and influential figures in the history of Western art. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of which date from the last two years of his life. They include landscapes, still lifes, portraits, and self-portraits characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. He was not commercially successful and, struggling with severe depression and poverty, committed suicide at the age of 37.",
+                "entityPresentationInfo":{
+                    "entityScenario":"DominantEntity",
+                    "entityTypeHints":[
+                        "Person"
+                    ]
+                },
+                "id":"https://api.bing.microsoft.com/api/v7/#Entities.0",
+                "name":"Vincent van Gogh",
+                "webSearchUrl":"https://www.bing.com/entityexplore?q=Vincent+van+Gogh&filters=sid:%222139c867-ec5a-5576-5987-9a4079e0f07c%22&elv=AXXfrEiqqD9r3GuelwApulobj4Y!CHp8xh*wW43szU3iKfgFZq9gLdl7pOHln0czI04R3hAUfojPc8A2NeNoKBTl2tj1eL0s8CJ4JFUYG0nT"
+            }
+        ]
+    },
+    "images":{
+        "id":"https://api.bing.microsoft.com/api/v7/#Images",
+        "isFamilyFriendly":true,
+        "readLink":"https://api.bing.microsoft.com/api/v7/images/search?q=vincent+van+gogh&qpvt=vincent+van+gogh",
+        "value":[
+            {
+                "contentSize":"1929621 B",
+                "contentUrl":"https://media.vogue.fr/photos/5c8a55363d44a0083ccbef54/2:3/w_2560%2Cc_limit/GettyImages-625257378.jpg",
+                "encodingFormat":"jpeg",
+                "height":3840,
+                "hostPageDisplayUrl":"https://www.vogue.fr/fashion-culture/article/vincent-van-gogh-8-things-you-didnt-know-about-the-painter",
+                "hostPageUrl":"https://www.vogue.fr/fashion-culture/article/vincent-van-gogh-8-things-you-didnt-know-about-the-painter",
+                "name":"Vincent van Gogh: 8 things you didn\u2019t know about the painter | Vogue Paris",
+                "thumbnail":{
+                    "height":711,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP._8CW0ghWf0Kie2nQEIzdbgHaLH&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=D2FFC9E0AFB0D86C925A39E1A78F60061A674C9B&FORM=IARRTH",
+                "width":2560
+            },
+            {
+                "contentSize":"2773379 B",
+                "contentUrl":"http://s.fixquotes.com/files/author/vincent-van-gogh_PsTYa.jpg",
+                "encodingFormat":"jpeg",
+                "height":2592,
+                "hostPageDisplayUrl":"http://fixquotes.com/authors/vincent-van-gogh.htm",
+                "hostPageUrl":"http://fixquotes.com/authors/vincent-van-gogh.htm",
+                "name":"Vincent Van Gogh the Artist, biography, facts and quotes",
+                "thumbnail":{
+                    "height":632,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.NcMWKpln6klD2-wzSZA18AHaJ4&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=72643378FD025BE0271A8E10F55C4AFF616A3198&FORM=IARRTH",
+                "width":1944
+            },
+            {
+                "contentSize":"430807 B",
+                "contentUrl":"https://www.biography.com/.image/t_share/MTY2NTIzMzc4MTI2MDM4MjM5/vincent_van_gogh_self_portrait_painting_musee_dorsay_via_wikimedia_commons_promojpg.jpg",
+                "encodingFormat":"jpeg",
+                "height":1200,
+                "hostPageDisplayUrl":"https://www.biography.com/artist/vincent-van-gogh",
+                "hostPageUrl":"https://www.biography.com/artist/vincent-van-gogh",
+                "name":"Vincent van Gogh - Paintings, Quotes & Death - Biography",
+                "thumbnail":{
+                    "height":474,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.yLomO5na-ewt2bbjj3Gc8QHaHa&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=49E5AD7708993676F47B705206DCC2FA036B7F2F&FORM=IARRTH",
+                "width":1200
+            },
+            {
+                "contentSize":"388042 B",
+                "contentUrl":"https://www.washingtonpost.com/resizer/lunVv9bc88DxdH252ZuGD5Uw3fo=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/MYM2TIXJXII6RKJZSRU7CFTPTU.jpg",
+                "encodingFormat":"jpeg",
+                "height":1147,
+                "hostPageDisplayUrl":"https://www.washingtonpost.com/entertainment/a-portrait-of-vincent-van-gogh-as-a-tormented-soul/2018/11/16/ea7f79e8-e770-11e8-b8dc-66cca409c180_story.html",
+                "hostPageUrl":"https://www.washingtonpost.com/entertainment/a-portrait-of-vincent-van-gogh-as-a-tormented-soul/2018/11/16/ea7f79e8-e770-11e8-b8dc-66cca409c180_story.html",
+                "name":"A portrait of Vincent van Gogh as a tormented soul - The Washington Post",
+                "thumbnail":{
+                    "height":366,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.cPEU6qlbCbhWSOH1H7py6QHaFu&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=9CEAD510BC778F7ABC5D549A2047DD9D5FA77C47&FORM=IARRTH",
+                "width":1484
+            },
+            {
+                "contentSize":"1154369 B",
+                "contentUrl":"https://uploads7.wikiart.org/images/vincent-van-gogh/self-portrait-1887-4.jpg",
+                "encodingFormat":"jpeg",
+                "height":2253,
+                "hostPageDisplayUrl":"http://www.wikiart.org/en/vincent-van-gogh/self-portrait-1887-4",
+                "hostPageUrl":"http://www.wikiart.org/en/vincent-van-gogh/self-portrait-1887-4",
+                "name":"Self-Portrait, 1887 - Vincent van Gogh - WikiArt.org",
+                "thumbnail":{
+                    "height":607,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.vLIkt-7HnudVpaCB0LQa5AHaJf&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=2AA73A155D10D055B9364FB8B3102CC95ADDA55F&FORM=IARRTH",
+                "width":1759
+            },
+            {
+                "contentSize":"1655183 B",
+                "contentUrl":"http://home.bt.com/images/experts-confirm-authenticity-of-vincent-van-gogh-self-portrait-136442647703102601-200120121103.jpg",
+                "encodingFormat":"jpeg",
+                "height":1771,
+                "hostPageDisplayUrl":"http://home.bt.com/news/showbiz-news/experts-confirm-authenticity-of-vincent-van-gogh-self-portrait-11364426477103",
+                "hostPageUrl":"http://home.bt.com/news/showbiz-news/experts-confirm-authenticity-of-vincent-van-gogh-self-portrait-11364426477103",
+                "name":"Experts confirm authenticity of Vincent Van Gogh \u2018self-portrait\u2019 | BT",
+                "thumbnail":{
+                    "height":266,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.sJ1bNV0QWGFYdp5P_eCamAHaEK&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=4A151A073630E0C14247DE7215B61AFF2143DE7E&FORM=IARRTH",
+                "width":3148
+            },
+            {
+                "contentSize":"1225874 B",
+                "contentUrl":"https://uploads7.wikiart.org/images/vincent-van-gogh/self-portrait-1887-6.jpg",
+                "encodingFormat":"jpeg",
+                "height":2197,
+                "hostPageDisplayUrl":"https://www.wikiart.org/en/vincent-van-gogh/self-portrait-1887-6",
+                "hostPageUrl":"https://www.wikiart.org/en/vincent-van-gogh/self-portrait-1887-6",
+                "name":"Self-Portrait, 1887 - Vincent van Gogh - WikiArt.org",
+                "thumbnail":{
+                    "height":589,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.jEu7b_9QSV13R12AbiVq4gHaJN&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=6F3009DA63D9C782FFD4F2A2E836D9A984743F80&FORM=IARRTH",
+                "width":1767
+            },
+            {
+                "contentSize":"1132322 B",
+                "contentUrl":"https://media.architecturaldigest.com/photos/5abe857633e2a9249e2c08d7/master/w_1600%2Cc_limit/GettyImages-153047345.jpg",
+                "encodingFormat":"jpeg",
+                "height":2000,
+                "hostPageDisplayUrl":"https://www.architecturaldigest.com/story/fascinating-facts-about-vincent-van-gogh",
+                "hostPageUrl":"https://www.architecturaldigest.com/story/fascinating-facts-about-vincent-van-gogh",
+                "name":"Facts about Vincent van Gogh | Architectural Digest",
+                "thumbnail":{
+                    "height":614,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.YdTaTrkBGHp0h_NJhXenfQHaJm&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=45A03F836C6DAA539EE4B9E561C75DA1C0EE99D8&FORM=IARRTH",
+                "width":1542
+            },
+            {
+                "contentSize":"346999 B",
+                "contentUrl":"http://wallpapercave.com/wp/qEog6zo.jpg",
+                "encodingFormat":"jpeg",
+                "height":1080,
+                "hostPageDisplayUrl":"http://wallpapercave.com/vincent-van-gogh-wallpapers",
+                "hostPageUrl":"http://wallpapercave.com/vincent-van-gogh-wallpapers",
+                "name":"Vincent Van Gogh Wallpapers - Wallpaper Cave",
+                "thumbnail":{
+                    "height":378,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.eX2xNQo6nLRrS3mQfaCYqQHaF6&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=DFE4185511116CAA8FB67458C77A8309D992D4C9&FORM=IARRTH",
+                "width":1354
+            },
+            {
+                "contentSize":"485685 B",
+                "contentUrl":"https://cdn03.plentymarkets.com/0oyf0h0zqec7/item/images/61078/full/C46362-61078.jpg",
+                "encodingFormat":"jpeg",
+                "height":1225,
+                "hostPageDisplayUrl":"https://www.uniquearts.ltd.uk/oil-paintings/reproductions/vincent-van-gogh/vincent-van-gogh-wheat-field-with-crows-32x44-oil-painting_61078_42647",
+                "hostPageUrl":"https://www.uniquearts.ltd.uk/oil-paintings/reproductions/vincent-van-gogh/vincent-van-gogh-wheat-field-with-crows-32x44-oil-painting_61078_42647",
+                "name":"Vincent van Gogh - Wheat Field with Crows 32x44 \" oil painting | Unique ...",
+                "thumbnail":{
+                    "height":341,
+                    "width":474
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OIP.e9nuXQTuSGUg9UlXWbJqIwHaFV&pid=Api",
+                "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&id=29B24F8AE4B8548A5AAA7AD6495AECFB45E2ED8C&FORM=IARRTH",
+                "width":1700
+            }
+        ],
+        "webSearchUrl":"https://www.bing.com/images/search?q=vincent+van+gogh&qpvt=vincent+van+gogh"
+    },
+    "news":{
+        "id":"https://api.bing.microsoft.com/api/v7/#News",
+        "readLink":"https://api.bing.microsoft.com/api/v7/news/search?q=Vincent+Van+Gogh",
+        "value":[
+            {
+                "about":[
+                    {
+                        "name":"Vincent van Gogh",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/2139c867-ec5a-5576-5987-9a4079e0f07c"
+                    },
+                    {
+                        "name":"Timeline of the Syrian Civil War",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/ebdc7900-1d5e-453b-96c0-dda63e245652"
+                    },
+                    {
+                        "name":"Difference",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/8f098613-3cbe-1145-916f-30bc3ee1e9d5"
+                    }
+                ],
+                "category":"World",
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/TextAttribution",
+                        "text":"YAHOO!News"
+                    }
+                ],
+                "datePublished":"2022-10-20T15:38:00.0000000Z",
+                "description":"Bizarre stunts certainly get attention, but do they advance the climate movement or make activists look extreme and out of touch?",
+                "image":{
+                    "contentUrl":"https://s.yimg.com/os/creatr-uploaded-images/2022-10/91414210-508c-11ed-bcf5-a3b9c0c0f01c",
+                    "thumbnail":{
+                        "contentUrl":"https://www.bing.com/th?id=OVFT.Hnwlm-zEItOpTsFdUD98cC&pid=News",
+                        "height":393,
+                        "width":700
+                    }
+                },
+                "name":"Van Gogh \u2018souping\u2019: Do disruptive protests make a difference?",
+                "provider":[
+                    {
+                        "_type":"Organization",
+                        "image":{
+                            "thumbnail":{
+                                "contentUrl":"https://www.bing.com/th?id=ODF.nYADEgS75l8rdCg9D-p_OQ&pid=news"
+                            }
+                        },
+                        "name":"YAHOO!News"
+                    }
+                ],
+                "url":"https://news.yahoo.com/van-gogh-souping-do-disruptive-protests-make-a-difference-153832815.html"
+            },
+            {
+                "about":[
+                    {
+                        "name":"Vincent van Gogh",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/2139c867-ec5a-5576-5987-9a4079e0f07c"
+                    },
+                    {
+                        "name":"Detroit",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/85910f05-3dc5-436a-85db-fe5802c27206"
+                    }
+                ],
+                "category":"Entertainment",
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/TextAttribution",
+                        "text":"The New York Times"
+                    }
+                ],
+                "datePublished":"2022-10-20T09:00:00.0000000Z",
+                "description":"This fall, the first U.S. museum to purchase a painting by Vincent van Gogh mounts a comprehensive exhibition of his work. Here\u2019s what to expect.",
+                "image":{
+                    "contentUrl":"https://static01.nyt.com/images/2022/10/23/multimedia/23sp-museums-detroit-2/23sp-museums-detroit-2-facebookJumbo.jpg",
+                    "thumbnail":{
+                        "contentUrl":"https://www.bing.com/th?id=OVFT.u4thg5SyYzgT9UhxHC1cbS&pid=News",
+                        "height":366,
+                        "width":700
+                    }
+                },
+                "name":"In Detroit, a Look at America\u2019s Passion for van Gogh",
+                "provider":[
+                    {
+                        "_type":"Organization",
+                        "image":{
+                            "thumbnail":{
+                                "contentUrl":"https://www.bing.com/th?id=ODF.GzcmUDr41J6Qc1JEQyNTCA&pid=news"
+                            }
+                        },
+                        "name":"The New York Times"
+                    }
+                ],
+                "url":"https://www.nytimes.com/2022/10/20/arts/design/detroit-van-gogh-exhibit.html"
+            },
+            {
+                "about":[
+                    {
+                        "name":"Vincent van Gogh",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/2139c867-ec5a-5576-5987-9a4079e0f07c"
+                    },
+                    {
+                        "name":"Throwing",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/67781da4-f438-5ae8-9a11-9df8b3b1d427"
+                    },
+                    {
+                        "name":"Stunt",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/ac1c0993-eae1-665a-8b42-882fecb0ba32"
+                    }
+                ],
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/TextAttribution",
+                        "text":"YAHOO!News"
+                    }
+                ],
+                "datePublished":"2022-10-20T09:58:00.0000000Z",
+                "description":"It was the splash heard 'round the world \u2014 last week, activists from climate group Just Stop Oil hurled a bevy of tomato soup onto Vincent van Gogh's \"Sunflowers,\" an iconic, 13-decades-old painting worth more than $80 million.",
+                "image":{
+                    "contentUrl":"https://s.yimg.com/uu/api/res/1.2/c1sZwL0BsUyKa8n9aTJWlA--~B/aD00NzU7dz04NDU7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/the_week_574/6d865f5df18427609cb19c57a1f9b843",
+                    "thumbnail":{
+                        "contentUrl":"https://www.bing.com/th?id=OVFT.rk205FUasbWul37O7A4V1C&pid=News",
+                        "height":393,
+                        "width":700
+                    }
+                },
+                "name":"Throwing soup at van Gogh's 'Sunflowers': A clever protest, or did the stunt overshadow the point?",
+                "provider":[
+                    {
+                        "_type":"Organization",
+                        "image":{
+                            "thumbnail":{
+                                "contentUrl":"https://www.bing.com/th?id=ODF.nYADEgS75l8rdCg9D-p_OQ&pid=news"
+                            }
+                        },
+                        "name":"YAHOO!News"
+                    }
+                ],
+                "url":"https://news.yahoo.com/throwing-soup-van-goghs-sunflowers-095807023.html"
+            },
+            {
+                "about":[
+                    {
+                        "name":"Vincent van Gogh",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/2139c867-ec5a-5576-5987-9a4079e0f07c"
+                    }
+                ],
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/TextAttribution",
+                        "text":"Hyperallergic"
+                    }
+                ],
+                "datePublished":"2022-10-20T02:16:00.0000000Z",
+                "description":"Neither Picasso nor Hilma af Klint ever visited the Faroe Islands, but in a new exhibition, a museum uses AI to imagine how these artists would have painted their archipelago.",
+                "image":{
+                    "contentUrl":"https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2022/10/AndyWarhol2-1200x1200-1.jpg?resize=780%2C780&quality=100&ssl=1",
+                    "thumbnail":{
+                        "contentUrl":"https://www.bing.com/th?id=OVFT.09HvYAua7t-cQj_ZtHgU_S&pid=News",
+                        "height":700,
+                        "width":700
+                    }
+                },
+                "name":"What if Van Gogh Could Paint Your Hometown?",
+                "provider":[
+                    {
+                        "_type":"Organization",
+                        "image":{
+                            "thumbnail":{
+                                "contentUrl":"https://www.bing.com/th?id=ODF.SVhiB7EajBNb8hVlmuKsvA&pid=news"
+                            }
+                        },
+                        "name":"Hyperallergic"
+                    }
+                ],
+                "url":"https://hyperallergic.com/771709/midjourney-artists-paint-faroe-islands/"
+            },
+            {
+                "about":[
+                    {
+                        "name":"George Monbiot",
+                        "readLink":"https://api.bing.microsoft.com/api/v7/entities/9e9e189c-80b8-caa9-1eba-649291290e2f"
+                    }
+                ],
+                "category":"Politics",
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/TextAttribution",
+                        "text":"The Guardian"
+                    }
+                ],
+                "datePublished":"2022-10-19T12:12:00.0000000Z",
+                "description":"The Just Stop Oil activists are accused of tactics that will stop people listening. But \u2018respectable\u2019 protest is roundly ignored, says Guardian columnist George Monbiot",
+                "image":{
+                    "contentUrl":"https://i.guim.co.uk/img/media/ac24efb51ba530761ecfbfd2c71a796a7ee95c6c/205_588_6468_3881/master/6468.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=0cee276b84bc2284b4815536380e4fc4",
+                    "thumbnail":{
+                        "contentUrl":"https://www.bing.com/th?id=OVFT.V_R8ouawfLnvXuVmAOIQ7y&pid=News",
+                        "height":367,
+                        "width":700
+                    }
+                },
+                "mentions":[
+                    {
+                        "name":"George Monbiot"
+                    },
+                    {
+                        "name":"Sunflowers"
+                    },
+                    {
+                        "name":"The Guardian"
+                    }
+                ],
+                "name":"Do we really care more about Van Gogh\u2019s sunflowers than real ones?",
+                "provider":[
+                    {
+                        "_type":"Organization",
+                        "image":{
+                            "thumbnail":{
+                                "contentUrl":"https://www.bing.com/th?id=ODF.FLSSz2cn3Rqzpu_HVWuRvA&pid=news"
+                            }
+                        },
+                        "name":"The Guardian"
+                    }
+                ],
+                "url":"https://www.theguardian.com/commentisfree/2022/oct/19/van-gogh-sunflowers-just-stop-oil-tactics"
+            }
+        ]
+    },
+    "queryContext":{
+        "originalQuery":"Vincent Van Gogh"
+    },
+    "rankingResponse":{
+        "mainline":{
+            "items":[
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":0,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.0"
+                    }
+                },
+                {
+                    "answerType":"News",
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#News"
+                    }
+                },
+                {
+                    "answerType":"Videos",
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#Videos"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":1,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":2,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":3,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.3"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":4,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.4"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":5,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.5"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":6,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.6"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":7,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.7"
+                    }
+                },
+                {
+                    "answerType":"WebPages",
+                    "resultIndex":8,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#WebPages.8"
+                    }
+                },
+                {
+                    "answerType":"RelatedSearches",
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#RelatedSearches"
+                    }
+                }
+            ]
+        },
+        "sidebar":{
+            "items":[
+                {
+                    "answerType":"Images",
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#Images"
+                    }
+                },
+                {
+                    "answerType":"Entities",
+                    "resultIndex":0,
+                    "value":{
+                        "id":"https://api.bing.microsoft.com/api/v7/#Entities.0"
+                    }
+                },
+                {
+                    "answerType":"WebPages"
+                }
+            ]
+        }
+    },
+    "relatedSearches":{
+        "id":"https://api.bing.microsoft.com/api/v7/#RelatedSearches",
+        "value":[
+            {
+                "displayText":"20 facts about van gogh",
+                "text":"20 facts about van gogh",
+                "webSearchUrl":"https://www.bing.com/search?q=20+facts+about+van+gogh"
+            },
+            {
+                "displayText":"vincent van gogh exhibits",
+                "text":"vincent van gogh exhibits",
+                "webSearchUrl":"https://www.bing.com/search?q=vincent+van+gogh+exhibits"
+            },
+            {
+                "displayText":"vincent van gogh early life",
+                "text":"vincent van gogh early life",
+                "webSearchUrl":"https://www.bing.com/search?q=vincent+van+gogh+early+life"
+            },
+            {
+                "displayText":"van gogh article",
+                "text":"van gogh article",
+                "webSearchUrl":"https://www.bing.com/search?q=van+gogh+article"
+            },
+            {
+                "displayText":"paintings by vincent van gogh",
+                "text":"paintings by vincent van gogh",
+                "webSearchUrl":"https://www.bing.com/search?q=paintings+by+vincent+van+gogh"
+            },
+            {
+                "displayText":"vincent van gogh art",
+                "text":"vincent van gogh art",
+                "webSearchUrl":"https://www.bing.com/search?q=vincent+van+gogh+art"
+            },
+            {
+                "displayText":"best vincent van gogh biography",
+                "text":"best vincent van gogh biography",
+                "webSearchUrl":"https://www.bing.com/search?q=best+vincent+van+gogh+biography"
+            },
+            {
+                "displayText":"vincent van gogh starry night",
+                "text":"vincent van gogh starry night",
+                "webSearchUrl":"https://www.bing.com/search?q=vincent+van+gogh+starry+night"
+            }
+        ]
+    },
+    "videos":{
+        "id":"https://api.bing.microsoft.com/api/v7/#Videos",
+        "isFamilyFriendly":true,
+        "readLink":"https://api.bing.microsoft.com/api/v7/videos/search?q=vincent+van+gogh",
+        "scenario":"List",
+        "value":[
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=bX_IQAl_d5g",
+                "datePublished":"2021-04-13T08:09:56.0000000",
+                "description":"Subscribe for our latest videos Follow us on Instagram: https://www.instagram.com/vangoghmuseum Follow us on Facebook: https://www.facebook.com/VanGoghMuseum Explore our collection online: https://www.vangoghmuseum.nl/en/collection Visit our webstore: https://www.vangoghmuseumshop.com Website: https://www.vangoghmuseum.com Your support is vital ...",
+                "duration":"PT4M45S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/bX_IQAl_d5g?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=bX_IQAl_d5g",
+                "hostPageUrl":"https://www.youtube.com/watch?v=bX_IQAl_d5g",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse4.mm.bing.net/th?id=OM.dvbEmFFSlhCHug_1650877846&pid=Api",
+                "name":"Who was Vincent van Gogh?",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse4.mm.bing.net/th?id=OVP.4FW9Hf55U2QArTnt4qQ_PgHgFo&pid=Api",
+                "viewCount":18841,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=BA871096525198C4F676BA871096525198C4F676",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=KlBG2ojDbQ8",
+                "datePublished":"2020-07-26T16:59:53.0000000",
+                "description":"The tragic story of the immortal artist whose works are among the world's most treasured masterpieces today, but who was almost completely ignored in his own lifetime. Find out more about his life in this full documentary. #Biography #VincentVanGogh Subscribe for more Biography: http://aetv.us/2AsWMPH Dive deeper into Biography on our site ...",
+                "duration":"PT44M12S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/KlBG2ojDbQ8?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=KlBG2ojDbQ8",
+                "hostPageUrl":"https://www.youtube.com/watch?v=KlBG2ojDbQ8",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse3.mm.bing.net/th?id=OM.7kK1FrbKnKKAKw_1661910896&pid=Api",
+                "name":"Vincent Van Gogh: The Tragic Story of the Artist\u2019s Life | Full Documentary | Biography",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse3.mm.bing.net/th?id=OVP.ogIdbnWrVuKhGLwlTnLswQHgFo&pid=Api",
+                "viewCount":487864,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=2B80A29CCAB616B542EE2B80A29CCAB616B542EE",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=Zy3K2Lcw7hQ",
+                "datePublished":"2020-12-03T15:09:44.0000000",
+                "description":"These days, Vincent van Gogh is world-famous. But when he was alive, hardly anyone knew his work. Do you like to know who he was? Watch the video and find out! For children ages 6-9.",
+                "duration":"PT4M21S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/Zy3K2Lcw7hQ?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=Zy3K2Lcw7hQ",
+                "hostPageUrl":"https://www.youtube.com/watch?v=Zy3K2Lcw7hQ",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse4.mm.bing.net/th?id=OM1.GrgHwZE03uxQvg_1645017126&pid=Api",
+                "name":"Who was Vincent van Gogh?",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse4.mm.bing.net/th?id=OVP.Snwl4tNwJbS84n96PfEo8wHgFo&pid=Api",
+                "viewCount":44956,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=BE50ECDE3491C107B81ABE50ECDE3491C107B81A",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=S-pE47YC6eQ",
+                "datePublished":"2022-07-14T10:30:06.0000000",
+                "description":"A previously unknown self-portrait by Vincent Van Gogh has been discovered hidden on the back of another painting. Experts at the National Galleries of Scotland made the find when the canvas was X-rayed before an exhibition. The hidden self-portrait was covered by layers of glue and cardboard on the back of an earlier work called Head of a ...",
+                "duration":"PT1M43S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/S-pE47YC6eQ?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=S-pE47YC6eQ",
+                "hostPageUrl":"https://www.youtube.com/watch?v=S-pE47YC6eQ",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse2.mm.bing.net/th?id=OM.pRGmt5tVQnRMlw_1658146762&pid=Api",
+                "name":"Vincent Van Gogh self-portrait discovered through X-ray - BBC News",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse2.mm.bing.net/th?id=OVP.m66d5n5KIrQrtbuGarr_FwHgFo&pid=Api",
+                "viewCount":109872,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=974C7442559BB7A611A5974C7442559BB7A611A5",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=wk9L1N9bRRE",
+                "datePublished":"2021-06-30T13:37:21.0000000",
+                "description":"Great Art Explained totally unique merchandise available here - https://crowdmade.com/collections/greatartexplained Please consider supporting this channel on Patreon, thanks! https://www.patreon.com/user?u=53686503 Or if you prefer a one off donation - https://www.paypal.com/donate?hosted_button_id=Q44B57ENYRSV8 I would like to thank all my ...",
+                "duration":"PT15M51S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/wk9L1N9bRRE?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=wk9L1N9bRRE",
+                "hostPageUrl":"https://www.youtube.com/watch?v=wk9L1N9bRRE",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse2.mm.bing.net/th?id=OM.Xi2wfbqn8X1YnQ_1651978934&pid=Api",
+                "name":"Vincent Van Gogh's The Starry Night: Great Art Explained",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse2.mm.bing.net/th?id=OVP.0HkgT1rKsOg5Yq3GTENDPgHgFo&pid=Api",
+                "viewCount":3519011,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=9D587DF1A7BA7DB02D5E9D587DF1A7BA7DB02D5E",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=PeVKd9Os_Uk",
+                "datePublished":"2022-06-02T13:40:21.0000000",
+                "description":"Vincent van Gogh is arguably the most famous artist who has ever lived. The 19th century Dutch painter created hundreds of pieces of art, but only sold one of them during his lifetime. He became more appreciated only after he died and largely thought of himself as a failure during his life. He lived a troubled existence and struggled with ...",
+                "duration":"PT10M53S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/PeVKd9Os_Uk?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=PeVKd9Os_Uk",
+                "hostPageUrl":"https://www.youtube.com/watch?v=PeVKd9Os_Uk",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse2.mm.bing.net/th?id=OM1.Yamb9EsEibRgXg_1656229652&pid=Api",
+                "name":"Vincent van Gogh's SPOOKIEST Paintings",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse2.mm.bing.net/th?id=OVP.Shqp39lxhVE47acGcvqKowEsDh&pid=Api",
+                "viewCount":45760,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=5E60B489044BF49BA9615E60B489044BF49BA961",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=3q5fuVFWe0Q",
+                "datePublished":"2020-12-22T10:45:51.0000000",
+                "description":"Do you know Vincent van Gogh's story? It's a story of a misunderstood, stubborn man who wouldn't give up. A story about needing to do what you're good at. For children ages 9-14.",
+                "duration":"PT4M51S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/3q5fuVFWe0Q?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=3q5fuVFWe0Q",
+                "hostPageUrl":"https://www.youtube.com/watch?v=3q5fuVFWe0Q",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse3.mm.bing.net/th?id=OM.HgUJxV_PDRqNyg_1651975768&pid=Api",
+                "name":"Vincent van Gogh: My Story",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse3.mm.bing.net/th?id=OVP.Z6TciEga8xWQ3VGdcqWdTgHgFo&pid=Api",
+                "viewCount":39984,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=CA8D1A0DCF5FC509051ECA8D1A0DCF5FC509051E",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=ndwOgL3ZgCQ",
+                "datePublished":"2021-06-21T00:52:54.0000000",
+                "description":"Vincent van Gogh, The Starry Night, 1889 (June, Saint R\u00e9my), oil on canvas, 73.7 x 92.1 cm (The Museum of Modern Art) Speakers: Dr. Beth Harris and Dr. Steven Zucker",
+                "duration":"PT5M8S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/ndwOgL3ZgCQ?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=ndwOgL3ZgCQ",
+                "hostPageUrl":"https://www.youtube.com/watch?v=ndwOgL3ZgCQ",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse1.mm.bing.net/th?id=OM.rO43t_-y9FgKAQ_1645375220&pid=Api",
+                "name":"Vincent van Gogh, The Starry Night",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse1.mm.bing.net/th?id=OVP.uEFufd4ZYeWmc47vnDOBJQHgFo&pid=Api",
+                "viewCount":40557,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=010A58F4B2FFB737EEAC010A58F4B2FFB737EEAC",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=ooq7h2ppdEE",
+                "datePublished":"2021-02-19T15:00:15.0000000",
+                "description":"Although it resulted in some of the most remarkable artwork ever created, the life of Vincent van Gogh was marked by poverty, loneliness, rejection, and mental illness. Vincent van Gogh's biography is sad enough on its own; that his paintings would ultimately become the most sought after and expensive status symbols in the art world is an irony ...",
+                "duration":"PT12M5S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/ooq7h2ppdEE?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=ooq7h2ppdEE",
+                "hostPageUrl":"https://www.youtube.com/watch?v=ooq7h2ppdEE",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse2.mm.bing.net/th?id=OM.a-_jqlkvVkTW_w_1650888946&pid=Api",
+                "name":"Things You Didn't Know About the Tortured Life of Vincent van Gogh",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse2.mm.bing.net/th?id=OVP.3obxc6gLNtV285ymppqPdwEsDh&pid=Api",
+                "viewCount":276127,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=FFD644562F59AAE3EF6BFFD644562F59AAE3EF6B",
+                "width":1280
+            },
+            {
+                "allowHttpsEmbed":true,
+                "allowMobileEmbed":true,
+                "contentUrl":"https://www.youtube.com/watch?v=179lA-aGK4E",
+                "datePublished":"2022-06-15T13:00:33.0000000",
+                "description":"Discover Etel Adnan\u2019s colourful artworks in combination with those of Vincent van Gogh. Colour as Language is this versatile artist\u2019s first retrospective in the Netherlands. Subscribe for our latest videos Follow us on Instagram: https://www.instagram.com/vangoghmuseum Follow us on Facebook: https://www.facebook.com/VanGoghMuseum Website ...",
+                "duration":"PT5M13S",
+                "embedHtml":"<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/179lA-aGK4E?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "encodingFormat":"mp4",
+                "height":720,
+                "hostPageDisplayUrl":"https://www.youtube.com/watch?v=179lA-aGK4E",
+                "hostPageUrl":"https://www.youtube.com/watch?v=179lA-aGK4E",
+                "isAccessibleForFree":true,
+                "isSuperfresh":false,
+                "motionThumbnailUrl":"https://tse4.mm.bing.net/th?id=OM2.JrPHODX8B4HxDQ_1657145461&pid=Api",
+                "name":"Van Gogh Museum 4K Virtual Tour || Exhibition \u2018Etel Adnan - Colour as Language'",
+                "publisher":[
+                    {
+                        "name":"YouTube"
+                    }
+                ],
+                "thumbnail":{
+                    "height":120,
+                    "width":160
+                },
+                "thumbnailUrl":"https://tse4.mm.bing.net/th?id=OVP.6MIBT3Ma8_YeZ5okJ4M8vAEsDh&pid=Api",
+                "viewCount":11518,
+                "webSearchUrl":"https://www.bing.com/videos/search?q=vincent%20van%20gogh&view=detail&mid=0DF18107FC3538C7B3260DF18107FC3538C7B326",
+                "width":1280
+            }
+        ],
+        "webSearchUrl":"https://www.bing.com/videos/search?q=vincent+van+gogh"
+    },
+    "webPages":{
+        "totalEstimatedMatches":745000000,
+        "value":[
+            {
+                "contractualRules":[
+                    {
+                        "_type":"ContractualRules/LicenseAttribution",
+                        "license":{
+                            "name":"CC-BY-SA",
+                            "url":"http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice":"Text under CC-BY-SA license",
+                        "mustBeCloseToContent":true,
+                        "targetPropertyIndex":0,
+                        "targetPropertyName":"snippet"
+                    }
+                ],
+                "dateLastCrawled":"2022-10-18T21:16:00.0000000Z",
+                "displayUrl":"https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.0",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Vincent van Gogh - Wikipedia",
+                "snippet":"Vincent Willem van Gogh ( Dutch: [\u02c8v\u026ans\u025bnt \u02c8\u028b\u026al\u0259\u0271 v\u0251\u014b \u02c8\u0263\u0254x] ( listen); [note 1] 30 March 1853 \u2013 29 July 1890) was a Dutch Post-Impressionist artist who emerged as one of the most famous figures in the history of Western art after his death. In only a decade, Van Gogh created a prolific body of more than 2,000 works of art.",
+                "thumbnailUrl":"https://www.bing.com/th?id=OIP.jC5mHuEgdm2kTqA0eNSPhgAAAA&w=80&h=80&c=1&pid=5.1",
+                "url":"https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+            },
+            {
+                "dateLastCrawled":"2022-10-19T03:08:00.0000000Z",
+                "displayUrl":"https://www.britannica.com/biography/Vincent-van-Gogh",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.1",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Vincent van Gogh | Biography, Art, & Facts | Britannica",
+                "snippet":"Vincent van Gogh, in full Vincent Willem van Gogh, (born March 30, 1853, Zundert, Netherlands\u2014died July 29, 1890, Auvers-sur-Oise, near Paris, France), Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.",
+                "url":"https://www.britannica.com/biography/Vincent-van-Gogh"
+            },
+            {
+                "dateLastCrawled":"2022-10-18T21:18:00.0000000Z",
+                "displayUrl":"https://www.vincentvangogh.org",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.2",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Vincent van Gogh: 300 Paintings Analysis & Complete Works",
+                "snippet":"On 27 July 1890, Vincent van Gogh was shot in the stomach, and passed away in the early morning of 29 July 1890 in his room at the Auberge Ravoux in the village of Auvers-sur-Oise in northern France. Although official history maintains that Van Gogh committed suicide, the latest research reveals that Van Gogh's death might be caused by an accident.",
+                "thumbnailUrl":"https://www.bing.com/th?id=OIP.gIV9R1ArydqnffLQiVKvBAAAAA&w=80&h=80&c=1&pid=5.1",
+                "url":"https://www.vincentvangogh.org/"
+            },
+            {
+                "dateLastCrawled":"2022-10-19T01:21:00.0000000Z",
+                "displayUrl":"https://www.vincentvangogh.org/biography.jsp",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.3",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Biography of Vincent van Gogh",
+                "snippet":"On 27 July 1890, Vincent van Gogh was shot in the stomach, and passed away in the early morning of 29 July 1890 in his room at the Auberge Ravoux in the village of Auvers-sur-Oise. Although official history maintains that Van Gogh committed suicide, the latest research reveals that Van Gogh's death might be caused by an accident.",
+                "url":"https://www.vincentvangogh.org/biography.jsp"
+            },
+            {
+                "dateLastCrawled":"2022-10-18T17:49:00.0000000Z",
+                "displayUrl":"https://www.biography.com/artist/vincent-van-gogh",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.4",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Vincent van Gogh - Paintings, Quotes & Death - Biography",
+                "snippet":"Vincent van Gogh March 30, 1853 July 29, 1890 Some of van Gogh's most famous works include \"Starry Night,\" \"Irises,\" and \"Sunflowers.\" In a moment of instability, Vincent Van Gogh cut off...",
+                "thumbnailUrl":"https://www.bing.com/th?id=OIP.yLomO5na-ewt2bbjj3Gc8QHaHa&pid=Api",
+                "url":"https://www.biography.com/artist/vincent-van-gogh"
+            },
+            {
+                "dateLastCrawled":"2022-10-18T17:00:00.0000000Z",
+                "displayUrl":"https://www.nga.gov/collection/artist-info.1349.html",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.5",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Vincent van Gogh - National Gallery of Art",
+                "snippet":"Vincent van Gogh, born in 1853, grew up in the southern Netherlands, where his father was a minister. After seven years at a commercial art firm, Van Gogh\u2019s desire to help humanity led him to become a teacher, preacher, and missionary\u2014yet without success.",
+                "url":"https://www.nga.gov/collection/artist-info.1349.html"
+            },
+            {
+                "dateLastCrawled":"2022-10-19T07:07:00.0000000Z",
+                "displayUrl":"https://www.vincentvangogh.org/van-gogh-paintings.jsp",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.6",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Famous Paintings by Vincent van Gogh",
+                "snippet":"of Vincent van Gogh; Quotes of Vincent van Gogh; Biography of Vincent van Gogh; Complete Works of Vincent van Gogh . Vincent van Gogh's Paintings at Nuenen (1883-1885) Vincent van Gogh's Paintings at Paris (1886-1888) Vincent van Gogh's Paintings at Arles (1888-1889) Vincent van Gogh's Paintings at Auvers sur Oise (1890)",
+                "url":"https://www.vincentvangogh.org/van-gogh-paintings.jsp"
+            },
+            {
+                "dateLastCrawled":"2022-10-20T08:37:00.0000000Z",
+                "displayUrl":"https://www.smithsonianmag.com/smart-news/climate-activists-throw-soup-on-vincent-van...",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.7",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Climate Activists Throw Soup on Vincent van Gogh\u2019s \u2018Sunflowers\u2019 to ...",
+                "snippet":"A van Gogh drenched in soup is the latest and highest profile instance of climate activists tampering with famous works of art to call attention to their cause. In June, Just Stop Oil activists...",
+                "url":"https://www.smithsonianmag.com/smart-news/climate-activists-throw-soup-on-vincent-van-goghs-sunflowers-to-protest-fossil-fuels-180980958/"
+            },
+            {
+                "dateLastCrawled":"2022-10-18T02:17:00.0000000Z",
+                "displayUrl":"https://www.newsweek.com/van-gogh-masterpiece-splattered-soup-climate-protesters-1751979",
+                "id":"https://api.bing.microsoft.com/api/v7/#WebPages.8",
+                "isFamilyFriendly":true,
+                "isNavigational":false,
+                "language":"en",
+                "name":"Van Gogh Masterpiece Splattered With Soup by Climate Protesters",
+                "snippet":"In this photo, a Just Stop Oil activist is seen being taken into custody after throwing soup on Vincent Van Gogh's \"Sunflowers\" painting at the National Portrait Gallery on October 14, 2022, in ...",
+                "url":"https://www.newsweek.com/van-gogh-masterpiece-splattered-soup-climate-protesters-1751979"
+            }
+        ],
+        "webSearchUrl":"https://www.bing.com/search?q=Vincent+Van+Gogh"
+    }
+}
