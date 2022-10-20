@@ -1,1 +1,8 @@
-
+flask
+ast
+spacy
+webbrowser
+json
+os
+pprint
+requests
