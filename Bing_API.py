@@ -10,16 +10,16 @@ Documentation: https://docs.microsoft.com/en-us/bing/search-apis/bing-web-search
 '''
 
 # Add your Bing Search V7 subscription key and endpoint to your environment variables.
-subscription_key = '7676f944bb3d490ca515139368667eeb'
+subscription_key = 'c4b84197e233477885b9c6185ca8e8b2'
 endpoint = 'https://api.bing.microsoft.com/v7.0/search'
 
 # Query term(s) to search for. 
-query = "2+2"
+query = "Chicago"
 
 # Construct a request
 mkt = 'en-US'
-params = { 'q': query, 'mkt': mkt, "responseFilter": "Computation"}
-headers = { 'Ocp-Apim-Subscription-Key': '7676f944bb3d490ca515139368667eeb'}
+params = { 'q': query, 'mkt': mkt}
+headers = { 'Ocp-Apim-Subscription-Key': 'c4b84197e233477885b9c6185ca8e8b2'}
 
 # Call the API
 try:
