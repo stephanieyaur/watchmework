@@ -5,7 +5,8 @@ def _parsewebPages(pages):
     for p in pages:
         res = {
             "title": p["name"],
-            "link": p["url"]
+            "link": p["url"],
+            "preview": p["snippet"]
         }
         ret.append(res)
     return ret

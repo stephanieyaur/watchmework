@@ -4,39 +4,48 @@
     "results": [
         {
             "title": "Vincent van Gogh - Wikipedia",
-            "link": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+            "link": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+            "preview": "Vincent Willem van Gogh ( Dutch: [\u02c8v\u026ans\u025bnt \u02c8\u028b\u026al\u0259\u0271 v\u0251\u014b \u02c8\u0263\u0254x] ( listen); [note 1] 30 March 1853 \u2013 29 July 1890) was a Dutch Post-Impressionist artist who emerged as one of the most famous figures in the history of Western art after his death. In only a decade, Van Gogh created a prolific body of more than 2,000 works of art."
         },
         {
             "title": "Vincent van Gogh | Biography, Art, & Facts | Britannica",
-            "link": "https://www.britannica.com/biography/Vincent-van-Gogh"
+            "link": "https://www.britannica.com/biography/Vincent-van-Gogh",
+            "preview": "Vincent van Gogh, in full Vincent Willem van Gogh, (born March 30, 1853, Zundert, Netherlands\u2014died July 29, 1890, Auvers-sur-Oise, near Paris, France), Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists."
         },
         {
             "title": "Vincent van Gogh: 300 Paintings Analysis & Complete Works",
-            "link": "https://www.vincentvangogh.org/"
+            "link": "https://www.vincentvangogh.org/",
+            "preview": "On 27 July 1890, Vincent van Gogh was shot in the stomach, and passed away in the early morning of 29 July 1890 in his room at the Auberge Ravoux in the village of Auvers-sur-Oise in northern France. Although official history maintains that Van Gogh committed suicide, the latest research reveals that Van Gogh's death might be caused by an accident."
         },
         {
             "title": "Biography of Vincent van Gogh",
-            "link": "https://www.vincentvangogh.org/biography.jsp"
+            "link": "https://www.vincentvangogh.org/biography.jsp",
+            "preview": "On 27 July 1890, Vincent van Gogh was shot in the stomach, and passed away in the early morning of 29 July 1890 in his room at the Auberge Ravoux in the village of Auvers-sur-Oise. Although official history maintains that Van Gogh committed suicide, the latest research reveals that Van Gogh's death might be caused by an accident."
         },
         {
             "title": "Vincent van Gogh - Paintings, Quotes & Death - Biography",
-            "link": "https://www.biography.com/artist/vincent-van-gogh"
+            "link": "https://www.biography.com/artist/vincent-van-gogh",
+            "preview": "Vincent van Gogh March 30, 1853 July 29, 1890 Some of van Gogh's most famous works include \"Starry Night,\" \"Irises,\" and \"Sunflowers.\" In a moment of instability, Vincent Van Gogh cut off..."
         },
         {
             "title": "Vincent van Gogh - National Gallery of Art",
-            "link": "https://www.nga.gov/collection/artist-info.1349.html"
+            "link": "https://www.nga.gov/collection/artist-info.1349.html",
+            "preview": "Vincent van Gogh, born in 1853, grew up in the southern Netherlands, where his father was a minister. After seven years at a commercial art firm, Van Gogh\u2019s desire to help humanity led him to become a teacher, preacher, and missionary\u2014yet without success."
         },
         {
             "title": "Famous Paintings by Vincent van Gogh",
-            "link": "https://www.vincentvangogh.org/van-gogh-paintings.jsp"
+            "link": "https://www.vincentvangogh.org/van-gogh-paintings.jsp",
+            "preview": "of Vincent van Gogh; Quotes of Vincent van Gogh; Biography of Vincent van Gogh; Complete Works of Vincent van Gogh . Vincent van Gogh's Paintings at Nuenen (1883-1885) Vincent van Gogh's Paintings at Paris (1886-1888) Vincent van Gogh's Paintings at Arles (1888-1889) Vincent van Gogh's Paintings at Auvers sur Oise (1890)"
         },
         {
             "title": "Climate Activists Throw Soup on Vincent van Gogh\u2019s \u2018Sunflowers\u2019 to ...",
-            "link": "https://www.smithsonianmag.com/smart-news/climate-activists-throw-soup-on-vincent-van-goghs-sunflowers-to-protest-fossil-fuels-180980958/"
+            "link": "https://www.smithsonianmag.com/smart-news/climate-activists-throw-soup-on-vincent-van-goghs-sunflowers-to-protest-fossil-fuels-180980958/",
+            "preview": "A van Gogh drenched in soup is the latest and highest profile instance of climate activists tampering with famous works of art to call attention to their cause. In June, Just Stop Oil activists..."
         },
         {
             "title": "Van Gogh Masterpiece Splattered With Soup by Climate Protesters",
-            "link": "https://www.newsweek.com/van-gogh-masterpiece-splattered-soup-climate-protesters-1751979"
+            "link": "https://www.newsweek.com/van-gogh-masterpiece-splattered-soup-climate-protesters-1751979",
+            "preview": "In this photo, a Just Stop Oil activist is seen being taken into custody after throwing soup on Vincent Van Gogh's \"Sunflowers\" painting at the National Portrait Gallery on October 14, 2022, in ..."
         }
     ]
 }
