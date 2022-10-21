@@ -23,8 +23,8 @@ def bing_api(query):
         print("Headers:")
         print(response.headers)
 
-        print("JSON Response:")
-        pprint(response.json())
+        # print("JSON Response:")
+        # pprint(response.json())
         return response.json()
     except Exception as ex:
         raise ex
