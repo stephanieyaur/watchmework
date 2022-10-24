@@ -14,10 +14,10 @@ def _parsewebPages(pages):
 def _linktosearch(link):
     return link.split("=")[1].replace("+", " ").replace("%22", "\"")
 
-def parse_js(file):
-    f = open(file)
-    dat = json.load(f)
-    f.close()
+def parse_js(dat):
+    #f = open(file)
+    #dat = json.load(f)
+    #f.close()
     ret = {
         "searchlink": dat["webPages"]["webSearchUrl"],
         "searchstring": _linktosearch(dat["webPages"]["webSearchUrl"]),
@@ -28,7 +28,10 @@ def parse_js(file):
     #return (dat["entities"]["value"][0]["description"], dat["webPages"]["value"][0]["displayUrl"])
 
 if __name__ == '__main__':
-    parsed_res = parse_js('results/formatted_results.json')
+    f = open('results/formatted_results.json')
+    dat = json.load(f)
+    f.close()
+    parsed_res = parse_js(dat)
     print(parsed_res)
 
     ### testing the _linktosearch function
