@@ -38,7 +38,7 @@ def parse_js(dat):
     #return (dat["entities"]["value"][0]["description"], dat["webPages"]["value"][0]["displayUrl"])
 
 if __name__ == '__main__':
-    f = open('results/nonsense.json')
+    f = open('results/formatted_results.json')
     dat = json.load(f)
     f.close()
     parsed_res = parse_js(dat)
