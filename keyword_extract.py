@@ -29,7 +29,7 @@ def extract_ent(text):
     print()
     print("done ent")
     #return q
-    if len(ret) == 0: return text
+    if len(ret) == 0: return [text]
     return ret
 
     
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     
     txt = "Halloween"
     ents = extract_ent(txt)
-    print(ents)
+    print(ents[0])
     # for ent in ents:
     #     webbrowser.open_new(url="https://www.bing.com/images/search?q="+ent)
 
