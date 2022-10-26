@@ -29,6 +29,7 @@ def extract_ent(text):
     print()
     print("done ent")
     #return q
+    if len(ret) == 0: return text
     return ret
 
     
@@ -56,13 +57,14 @@ if __name__ == "__main__":
     #IDEA: SEARCH ENTITIES AND NOUNS SEPARATELY
     #IDEA: if work_of_art, use image search. If person, use bing entity search and news search. If place, use map search and news search? If product, use shopping? If org, use news?
     
-    txt = "Last week I saw a Vincent Van Gogh painting at the Art Institute of Chicago"
+    txt = "Halloween"
     ents = extract_ent(txt)
-    for ent in ents:
-        webbrowser.open_new(url="https://www.bing.com/images/search?q="+ent)
+    print(ents)
+    # for ent in ents:
+    #     webbrowser.open_new(url="https://www.bing.com/images/search?q="+ent)
 
-    fulltxt = txt.replace(" ", "+")
-    webbrowser.open_new(url = "https://www.bing.com/search?q="+fulltxt)
+    #fulltxt = txt.replace(" ", "+")
+    #webbrowser.open_new(url = "https://www.bing.com/search?q="+fulltxt)
 
     # noun_query = extract_noun(txt)
     # webbrowser.open_new(url="https://www.bing.com/search?q="+noun_query)
