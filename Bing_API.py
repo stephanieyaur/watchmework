@@ -7,7 +7,7 @@ import requests
 
 def bing_api(query):
     # Add your Bing Search V7 subscription key and endpoint to your environment variables.
-    subscription_key = 'c4b84197e233477885b9c6185ca8e8b2'
+    subscription_key = '224c9ce587314a79afdc8176b0a92652'
     endpoint = 'https://api.bing.microsoft.com/v7.0/search'
 
     # Construct a request
@@ -21,11 +21,12 @@ def bing_api(query):
         response.raise_for_status()
 
         print("Headers:")
-        print(response.headers)
+        print(response.json())
 
         # print("JSON Response:")
         # pprint(response.json())
         return response.json()
     except Exception as ex:
         raise ex
-        
+
+bing_api("chicago")

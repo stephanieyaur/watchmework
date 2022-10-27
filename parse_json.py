@@ -34,7 +34,7 @@ def parse_js(dat):
         "summary": _getsummary(dat),
         "results": _parsewebPages(dat),
     }
-    return json.dumps(ret, indent=4)
+    return ret
     #return (dat["entities"]["value"][0]["description"], dat["webPages"]["value"][0]["displayUrl"])
 
 if __name__ == '__main__':
