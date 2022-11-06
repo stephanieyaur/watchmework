@@ -22,7 +22,11 @@ def extract_ent(text):
     #q = ""
     ret = []
     for ent in doc.ents:
-        if not (ent.label_=='DATE' or ent.label_=='TIME' or ent.label_=='CARDINAL' or ent.label_=='MONEY'):
+        #if not (ent.label_=='DATE' or ent.label_=='TIME' or ent.label_=='CARDINAL' or ent.label_=='MONEY' or ent.label_=='QUANTITY' or ent.label_=='PERCENT'):
+
+        #Types of entities: PERSON, GPE (geopolitical: countries, states, city), ORG (organization), WORK_OF_ART, EVENT
+
+        if (ent.label_ == 'PERSON' or ent.label_ == 'GPE' or ent.label_ =='ORG' or ent.label_ =='EVENT' or ent.label_=='WORK_OF_ART'):
             print(ent.text, ent.label_)
             ret.append(ent.text)
             #q = q+ent.text+"+"
@@ -57,9 +61,9 @@ if __name__ == "__main__":
     #IDEA: SEARCH ENTITIES AND NOUNS SEPARATELY
     #IDEA: if work_of_art, use image search. If person, use bing entity search and news search. If place, use map search and news search? If product, use shopping? If org, use news?
     
-    txt = "Halloween"
+    txt = "Joe Schmoe went to Joejoejoe City and bought an iPhone. Then he went to the World Series. I bought Picasso's Guernica for a few bucks yesterday. I went to the movie theater to watch the movie Only Yesterday directed by Isao Takahata. I need to watch more movies made in Cambodia. My favorite song is Layla by Eric Clapton. Nighthawks is a painting by Edward Hopper. Joe Schmoe worked at Google for ten years before becoming President of Los Alamos National Lab."
     ents = extract_ent(txt)
-    print(ents[0])
+    #print(ents[0])
     # for ent in ents:
     #     webbrowser.open_new(url="https://www.bing.com/images/search?q="+ent)
 
