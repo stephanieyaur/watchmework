@@ -14,7 +14,7 @@ URL = "https://en.wikipedia.org/w/api.php"
 PARAMS = {
     "action": "opensearch",
     "namespace": "0",
-    "search": "hayao miyazaki",
+    "search": "italy",
     "limit": "5",
     "format": "json"
 }
@@ -41,8 +41,10 @@ soup = BeautifulSoup(content, 'html.parser')
 #print(soup.prettify())
 table = soup.find('table', class_ = "infobox")
 
+#TODO: turn title into link, short description underneath
+
 print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
-with open("tbl.html", "w", encoding='utf-8') as file:
+with open("italy_tbl.html", "w", encoding='utf-8') as file:
     file.write(str(table).replace("/wiki/", "https://en.wikipedia.org/wiki/"))
 # rows = table.find_all('tr')
 # ret = {}
