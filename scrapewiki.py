@@ -14,7 +14,7 @@ URL = "https://en.wikipedia.org/w/api.php"
 PARAMS = {
     "action": "opensearch",
     "namespace": "0",
-    "search": "italy",
+    "search": "hayao miyazaki",
     "limit": "5",
     "format": "json"
 }
@@ -41,9 +41,9 @@ soup = BeautifulSoup(content, 'html.parser')
 #print(soup.prettify())
 table = soup.find('table', class_ = "infobox")
 
-#print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
+print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
 with open("tbl.html", "w", encoding='utf-8') as file:
-    file.write(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
+    file.write(str(table).replace("/wiki/", "https://en.wikipedia.org/wiki/"))
 # rows = table.find_all('tr')
 # ret = {}
 # for r in rows:
@@ -60,8 +60,8 @@ with open("tbl.html", "w", encoding='utf-8') as file:
 #         else:
 #             data = r.find('td')
 #             ret[label] = data
-        #print(data)
-        #print()
+#         print(data)
+#         print()
 #print(ret["Born"])
 #print(ret["Population"])
 #print(ret["Died"])

@@ -8,11 +8,13 @@ import Features, CategoriesOptions, EntitiesOptions
 api_key = 'mTAM4m9Xd1tUGg-iFXxlIVq1GKX0JbMkM4MUZVHL0trs'
 service_url = 'https://api.us-east.natural-language-understanding.watson.cloud.ibm.com/instances/0e13ef0f-3489-4f56-b11e-4d2b14b54c91'
 
+ENTITY_TYPES = ['Person', 'Location', 'Organization', 'Facility']
+
 def get_analysis(document, paragraph):
     topics = get_topics(document)
     entities = get_entities(paragraph)
 
-    return topics['categories'], entities['entities']
+    return topics, entities
 
 def get_topics(document):
     authenticator = IAMAuthenticator(api_key)
@@ -28,7 +30,7 @@ def get_topics(document):
         features=Features(categories=CategoriesOptions(limit=10))
     ).get_result()
 
-    return response
+    return response['categories']
 
 def get_entities(paragraph):
     authenticator = IAMAuthenticator(api_key)
@@ -44,7 +46,13 @@ def get_entities(paragraph):
         features=Features(entities=EntitiesOptions(limit = None))
     ).get_result()
 
-    return response
+    result = []
+
+    for entry in response['entities']:
+        if entry['type'] in ENTITY_TYPES:
+            result.append(entry)
+
+    return result
 
 def entity_parse(entities):
     entity_list = []
