@@ -1,4 +1,5 @@
 
+from html import entities
 import json
 import os 
 from pprint import pprint
@@ -12,7 +13,7 @@ def bing_api(query):
 
     # Construct a request
     mkt = 'en-US'
-    params = { 'q': query, 'mkt': mkt}
+    params = { 'q': query, 'mkt': mkt, "response_filter":["-entities","images", "-RelatedSearches","-TimeZone", "-Videos", "-Computation"]}
     headers = { 'Ocp-Apim-Subscription-Key': subscription_key}
 
     # Call the API
@@ -20,13 +21,12 @@ def bing_api(query):
         response = requests.get(endpoint, headers=headers, params=params)
         response.raise_for_status()
 
-        print("Headers:")
-        print(response.json())
+        #print("Headers:")
+        # print(response.json())
 
         # print("JSON Response:")
-        # pprint(response.json())
+        pprint(response.json())
         return response.json()
     except Exception as ex:
         raise ex
 
-bing_api("chicago")

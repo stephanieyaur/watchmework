@@ -46,10 +46,27 @@ def get_entities(paragraph):
 
     return response
 
+def entity_parse(entities):
+    entity_list = []
+    for entity in entities:
+        entity_list.append(entity['text'])
+    return entity_list
+
+def topic_parse(topics):
+    topic_list = []
+    for topic in topics:
+        cat = topic['label']
+        if '/' in cat:
+            cat = cat.split('/')[-1]
+        topic_list.append(cat)
+    return topic_list
 
 if __name__ == '__main__':
     paragraph = 'Chicago, on Lake Michigan in Illinois, is among the largest cities in the United States. Known for its bold architecture, it has a skyline punctuated by skyscrapers such as the iconic John Hancock Center, 1,451-ft. Willis Tower (formerly the Sears Tower) and the neo-Gothic Tribune Tower. The city is also renowned for its museums, including the Art Institute of Chicago with its noted Impressionist and Post-Impressionist works. Lori Elaine Lightfoot is an American attorney and politician serving since 2019 as the 56th mayor of Chicago. She is a member of the Democratic Party. Before becoming mayor, Lightfoot worked in private legal practice as a partner at Mayer Brown and held various government positions in Chicago. The Bulls are the basketball located in Chicago. Players on the team include Demar DeRozen, and the team made it to the first round of the playoffs last year.'
     topics, entities = get_analysis(paragraph, paragraph)
+    
     print("TOPICS: ", topics)
     print("ENTITIES: ", entities)
+
+
 
