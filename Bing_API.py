@@ -13,7 +13,7 @@ def bing_api(query):
 
     # Construct a request
     mkt = 'en-US'
-    params = { 'q': query, 'mkt': mkt, "response_filter":["-entities","images", "-RelatedSearches","-TimeZone", "-Videos", "-Computation"]}
+    params = { 'q': query, 'mkt': mkt, "response_filter":["-entities","images", "-RelatedSearches","-TimeZone", "-Videos", "-Computation"], "count": 5}
     headers = { 'Ocp-Apim-Subscription-Key': subscription_key}
 
     # Call the API
@@ -25,7 +25,7 @@ def bing_api(query):
         # print(response.json())
 
         # print("JSON Response:")
-        pprint(response.json())
+        # pprint(response.json())
         return response.json()
     except Exception as ex:
         raise ex

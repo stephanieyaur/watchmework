@@ -5,6 +5,7 @@ from Bing_API import *
 from keyword_extract import *
 from IBM_api import *
 from parse_json import *
+from scrapewiki import *
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
@@ -14,18 +15,23 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     body = json.loads(body)
     paragraph = body['paragraph']
     doc = body['doc']
-    response = []
-    entities, topics = get_analysis(doc, paragraph)
+  
+    topics, entities = get_analysis(doc, paragraph)
     topics = topic_parse(topics)
     entities = entity_parse(entities)
     entities = entities[:3]
+    resources = []
+    info = []
+    for e in entities:
+        temp = {e:scrape_wiki(e) }
+        info.append((temp))
     for e in entities:
         for t in topics:
                 query = e + ' ' + t
                 results = bing_api(query)
-                response.append(parse_js(results))
+                resources.append(parse_js(results))
 
     return func.HttpResponse(
-            json.dumps({"results": response}),
+            json.dumps({"entities": info,"results": resources}),
             status_code=200
     )
