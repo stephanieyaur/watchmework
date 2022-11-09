@@ -7,45 +7,49 @@ import requests
 #from pywebcopy import save_webpage
 import json
 
-S = requests.Session()
+def scrape_wiki(term):
 
-URL = "https://en.wikipedia.org/w/api.php"
+    S = requests.Session()
 
-PARAMS = {
-    "action": "opensearch",
-    "namespace": "0",
-    "search": "italy",
-    "limit": "5",
-    "format": "json"
-}
+    URL = "https://en.wikipedia.org/w/api.php"
 
-R = S.get(url=URL, params=PARAMS)
-DATA = R.json()
+    PARAMS = {
+        "action": "opensearch",
+        "namespace": "0",
+        "search": term,
+        "limit": "5",
+        "format": "json"
+    }
 
-print(DATA[3][0])
+    R = S.get(url=URL, params=PARAMS)
+    DATA = R.json()
 
-url = DATA[3][0]
+    #print(DATA[3][0])
 
-# download_folder = "/Users/alextai/Documents/CS338/watchmework"
+    url = DATA[3][0]
 
-# save_webpage(url, download_folder)
+    # download_folder = "/Users/alextai/Documents/CS338/watchmework"
 
-html = requests.get(url).content
-#print(html)
+    # save_webpage(url, download_folder)
 
-with urlopen(url) as webpage:
-    content = webpage.read().decode()
+    html = requests.get(url).content
+    #print(html)
 
-soup = BeautifulSoup(content, 'html.parser')
+    with urlopen(url) as webpage:
+        content = webpage.read().decode()
 
-#print(soup.prettify())
-table = soup.find('table', class_ = "infobox")
+    soup = BeautifulSoup(content, 'html.parser')
+
+    #print(soup.prettify())
+    table = soup.find('table', class_ = "infobox")
+
+    return str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
 
 #TODO: turn title into link, short description underneath
 
-print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
-with open("italy_tbl.html", "w", encoding='utf-8') as file:
-    file.write(str(table).replace("/wiki/", "https://en.wikipedia.org/wiki/"))
+# print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
+# with open("italy_tbl.html", "w", encoding='utf-8') as file:
+#     file.write(str(table).replace("/wiki/", "https://en.wikipedia.org/wiki/"))
 # rows = table.find_all('tr')
 # ret = {}
 # for r in rows:
@@ -95,3 +99,6 @@ with open("italy_tbl.html", "w", encoding='utf-8') as file:
 # DATA = R.json()
 
 # print(DATA["parse"]["text"]["*"])
+
+if __name__ == "__main__":
+    print(scrape_wiki("italy"))
