@@ -23,8 +23,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     resources = []
     info = []
     for e in entities:
-        temp = {e:scrape_wiki(e) }
-        info.append((temp))
+        info.append(scrape_wiki(e))
     for e in entities:
         for t in topics:
                 query = e + ' ' + t
