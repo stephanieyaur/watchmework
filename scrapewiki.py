@@ -50,7 +50,7 @@ def scrape_wiki(term):
     ret = {}
 
     title = soup.find('span', class_="mw-page-title-main")
-    print(title.get_text())
+    # print(title.get_text())
     ret["title"] = title.get_text()
     ret["link_to_article"] = url
 
@@ -59,11 +59,11 @@ def scrape_wiki(term):
     ret["infobox"] = str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
     
     snip = soup.find('b')
-    print(snip.parent)
+    # print(snip.parent)
     ret["snippet"] = str(snip.parent).replace("/wiki/", "en.wikipedia.org/wiki/")
 
     short_descr = soup.find('div', class_ = "shortdescription")
-    print(short_descr.get_text())
+    # print(short_descr.get_text())
     ret["description"] = short_descr.get_text()
 
     return ret

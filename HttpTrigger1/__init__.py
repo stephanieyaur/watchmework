@@ -7,11 +7,18 @@ from IBM_api import *
 from parse_json import *
 from scrapewiki import *
 
+def remove_dup(resources):
+    for i in resources:
+        for res in i['results']:
+            for j in resources[resources.index(i)+1:]:
+                for res2 in j['results']:
+                    if res['link'] == res2['link']:
+                        j['results'].remove(res2)
+    return resources
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
     body = req.get_body().decode()
-
     body = json.loads(body)
     paragraph = body['paragraph']
     doc = body['doc']
@@ -29,6 +36,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 query = e + ' ' + t
                 results = bing_api(query)
                 resources.append(parse_js(results))
+    resources = remove_dup(resources)
 
     return func.HttpResponse(
             json.dumps({"entities": info,"results": resources}),
