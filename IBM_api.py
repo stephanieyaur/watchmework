@@ -60,7 +60,7 @@ def entity_parse(entities):
         entity_list.append(entity['text'])
     for i in entity_list:
         for j in entity_list[entity_list.index(i)+1:]:
-            if i in j:
+            if i in j or j in i:
                 entity_list.remove(j)
     return entity_list
 
