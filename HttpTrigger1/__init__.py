@@ -26,7 +26,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     topics, entities = get_analysis(doc, paragraph)
     topics = topic_parse(topics)
     entities = entity_parse(entities)
-    entities = entities[:3]
+    # entities = entities[:3]
     resources = []
     info = []
     for e in entities:
