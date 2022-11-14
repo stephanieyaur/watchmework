@@ -12,7 +12,7 @@ def remove_dup(resources):
         for res in i['results']:
             for j in resources[resources.index(i)+1:]:
                 for res2 in j['results']:
-                    if res['link'] == res2['link']:
+                    if res['link'] == res2['link'] or res['title'] == res2['title']:
                         j['results'].remove(res2)
     return resources
 
