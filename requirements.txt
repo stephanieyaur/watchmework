@@ -1,2 +1,5 @@
 spacy
 requests
+ibm_watson
+requests
+bs4
