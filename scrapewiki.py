@@ -31,6 +31,8 @@ def scrape_wiki(term):
     R = S.get(url=URL, params=PARAMS)
     DATA = R.json()
 
+    if not DATA[3]: return {}
+
     print(DATA[3][0])
 
     url = DATA[3][0]
@@ -125,7 +127,7 @@ def scrape_wiki(term):
 # print(DATA["parse"]["text"]["*"])
 
 if __name__ == "__main__":
-    info = scrape_wiki("michael jordan")
+    info = scrape_wiki("asdfasderfawe")
     print()
     print()
     print()
