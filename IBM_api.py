@@ -27,7 +27,7 @@ def get_topics(document):
 
     response = natural_language_understanding.analyze(
         text=document,
-        features=Features(concepts=ConceptsOptions(limit=10))
+        features=Features(concepts=ConceptsOptions(limit=4))
     ).get_result()
 
     return response['concepts']
@@ -43,7 +43,7 @@ def get_entities(paragraph):
 
     response = natural_language_understanding.analyze(
         text=paragraph,
-        features=Features(entities=EntitiesOptions(limit = None))
+        features=Features(entities=EntitiesOptions(limit = 4))
     ).get_result()
 
     result = []
