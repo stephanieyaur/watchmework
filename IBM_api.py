@@ -2,7 +2,7 @@ import json
 from ibm_watson import NaturalLanguageUnderstandingV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson.natural_language_understanding_v1 \
-import Features, CategoriesOptions, EntitiesOptions
+import Features, ConceptsOptions, EntitiesOptions
 
 
 api_key = 'mTAM4m9Xd1tUGg-iFXxlIVq1GKX0JbMkM4MUZVHL0trs'
@@ -27,10 +27,10 @@ def get_topics(document):
 
     response = natural_language_understanding.analyze(
         text=document,
-        features=Features(categories=CategoriesOptions(limit=10))
+        features=Features(concepts=ConceptsOptions(limit=4))
     ).get_result()
 
-    return response['categories']
+    return response['concepts']
 
 def get_entities(paragraph):
     authenticator = IAMAuthenticator(api_key)
@@ -43,7 +43,7 @@ def get_entities(paragraph):
 
     response = natural_language_understanding.analyze(
         text=paragraph,
-        features=Features(entities=EntitiesOptions(limit = None))
+        features=Features(entities=EntitiesOptions(limit = 4))
     ).get_result()
 
     result = []
@@ -67,9 +67,9 @@ def entity_parse(entities):
 def topic_parse(topics):
     topic_list = []
     for topic in topics:
-        cat = topic['label']
-        if '/' in cat:
-            cat = cat.split('/')[-1]
+        cat = topic['text']
+        # if '/' in cat:
+        #     cat = cat.split('/')[-1]
         topic_list.append(cat)
     return topic_list
 
