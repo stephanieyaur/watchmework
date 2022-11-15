@@ -68,7 +68,7 @@ def scrape_wiki(term):
     # print(short_descr.get_text())
     ret["description"] = short_descr.get_text()
 
-    return ret
+    return ret, DATA[3][0]
     #return str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
 
 

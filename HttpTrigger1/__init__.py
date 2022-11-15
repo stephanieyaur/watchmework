@@ -7,11 +7,16 @@ from IBM_api import *
 from parse_json import *
 from scrapewiki import *
 
-def remove_dup(resources):
+def remove_dup(resources, wiki_links):
     for i in resources:
         for res in i['results']:
+            if "wikipedia" in res['link'] and res['link'] in wiki_links:
+                i['results'].remove(res)
+                continue
             for j in resources[resources.index(i)+1:]:
                 for res2 in j['results']:
+                  
+
                     if res['link'] == res2['link'] or res['title'] == res2['title']:
                         j['results'].remove(res2)
     return resources
@@ -29,14 +34,25 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     # entities = entities[:3]
     resources = []
     info = []
+    del_list = []
+    wiki_links = []
     for e in entities:
-        info.append(scrape_wiki(e))
+        results =  scrape_wiki(e)
+        if results == {}:
+            del_list.append(e)
+            continue
+        info.append(results[0])
+        wiki_links.append(results[1])
+
+    for i in del_list:
+        entities.remove(i)
+
     for e in entities:
-        for t in topics:
+        for t in topics[:5]:
                 query = e + ' ' + t
                 results = bing_api(query)
                 resources.append(parse_js(results))
-    resources = remove_dup(resources)
+    resources = remove_dup(resources, wiki_links)
 
     return func.HttpResponse(
             json.dumps({"entities": info,"results": resources}),
