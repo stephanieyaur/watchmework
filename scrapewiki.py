@@ -51,27 +51,32 @@ def scrape_wiki(term):
 
     ret = {}
 
-    title = soup.find('span', class_="mw-page-title-main")
+    title = soup.find('h1', class_="mw-first-heading")
     # print(title.get_text())
-    ret["title"] = title.get_text()
+    if title: ret["title"] = title.get_text()
     ret["link_to_article"] = url
 
     #print(soup.prettify())
     table = soup.find('table', class_ = "infobox")
-    ret["infobox"] = str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
+    if table: ret["infobox"] = str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
     
     snip = soup.find('b')
     # print(snip.parent)
-    ret["snippet"] = str(snip.parent).replace("/wiki/", "en.wikipedia.org/wiki/")
+    if snip: ret["snippet"] = str(snip.parent).replace("/wiki/", "en.wikipedia.org/wiki/")
 
     short_descr = soup.find('div', class_ = "shortdescription")
     # print(short_descr.get_text())
-    ret["description"] = short_descr.get_text()
+    if short_descr: ret["description"] = short_descr.get_text()
 
     return ret
     #return str(table).replace("/wiki/", "en.wikipedia.org/wiki/")
 
-
+if __name__ == "__main__":
+    info = scrape_wiki("Yoichi Kotabe")
+    print()
+    print()
+    print()
+    print(json.dumps(info, indent=4))
 
 # print(str(table).replace("/wiki/", "en.wikipedia.org/wiki/"))
 # with open("italy_tbl.html", "w", encoding='utf-8') as file:
@@ -126,9 +131,3 @@ def scrape_wiki(term):
 
 # print(DATA["parse"]["text"]["*"])
 
-if __name__ == "__main__":
-    info = scrape_wiki("asdfasderfawe")
-    print()
-    print()
-    print()
-    print(json.dumps(info, indent=4))
