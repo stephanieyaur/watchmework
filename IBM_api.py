@@ -2,7 +2,7 @@ import json
 from ibm_watson import NaturalLanguageUnderstandingV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson.natural_language_understanding_v1 \
-import Features, CategoriesOptions, EntitiesOptions
+import Features, CategoriesOptions, EntitiesOptions, KeywordsOptions
 
 
 api_key = 'mTAM4m9Xd1tUGg-iFXxlIVq1GKX0JbMkM4MUZVHL0trs'
@@ -13,8 +13,9 @@ ENTITY_TYPES = ['Person', 'Location', 'Organization', 'Facility']
 def get_analysis(document, paragraph):
     topics = get_topics(document)
     entities = get_entities(paragraph)
+    keywords = get_keywords(paragraph)
 
-    return topics, entities
+    return topics, entities, keywords
 
 def get_topics(document):
     authenticator = IAMAuthenticator(api_key)
@@ -53,6 +54,28 @@ def get_entities(paragraph):
             result.append(entry)
 
     return result
+
+def get_keywords(text):
+    authenticator = IAMAuthenticator(api_key)
+    natural_language_understanding = NaturalLanguageUnderstandingV1(
+        version='2022-04-07',
+        authenticator=authenticator
+    )
+
+    natural_language_understanding.set_service_url(service_url)
+
+    response = natural_language_understanding.analyze(
+        text=paragraph,
+        features=Features(entities=KeywordsOptions(limit = 4))
+    ).get_result()
+
+    result = []
+
+    for entry in response['keywords']:
+        result.append(entry['text'])
+
+    return result
+
 
 def entity_parse(entities):
     entity_list = []
