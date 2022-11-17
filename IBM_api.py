@@ -28,10 +28,10 @@ def get_topics(document):
 
     response = natural_language_understanding.analyze(
         text=document,
-        features=Features(categories=CategoriesOptions(limit=10))
+        features=Features(concepts=ConceptsOptions(limit=4))
     ).get_result()
 
-    return response['categories']
+    return response['concepts']
 
 def get_entities(paragraph):
     authenticator = IAMAuthenticator(api_key)
@@ -44,7 +44,7 @@ def get_entities(paragraph):
 
     response = natural_language_understanding.analyze(
         text=paragraph,
-        features=Features(entities=EntitiesOptions(limit = None))
+        features=Features(entities=EntitiesOptions(limit = 4))
     ).get_result()
 
     result = []
@@ -81,14 +81,18 @@ def entity_parse(entities):
     entity_list = []
     for entity in entities:
         entity_list.append(entity['text'])
+    for i in entity_list:
+        for j in entity_list[entity_list.index(i)+1:]:
+            if i in j or j in i:
+                entity_list.remove(j)
     return entity_list
 
 def topic_parse(topics):
     topic_list = []
     for topic in topics:
-        cat = topic['label']
-        if '/' in cat:
-            cat = cat.split('/')[-1]
+        cat = topic['text']
+        # if '/' in cat:
+        #     cat = cat.split('/')[-1]
         topic_list.append(cat)
     return topic_list
 
