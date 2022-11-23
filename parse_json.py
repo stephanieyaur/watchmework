@@ -28,13 +28,13 @@ def parse_js(dat):
     #f = open(file)
     #dat = json.load(f)
     #f.close()
-    ret = {
-        "searchstring": dat["queryContext"]["originalQuery"],
-        "searchlink": _stringtolink(dat["queryContext"]["originalQuery"]),
-        "summary": _getsummary(dat),
-        "results": _parsewebPages(dat),
-    }
-    return ret
+    # ret = {
+    #     # "searchstring": dat["queryContext"]["originalQuery"],
+    #     # "searchlink": _stringtolink(dat["queryContext"]["originalQuery"]),
+    #     # "summary": _getsummary(dat),
+    #     "results": _parsewebPages(dat),
+    # }
+    return _parsewebPages(dat)
     #return (dat["entities"]["value"][0]["description"], dat["webPages"]["value"][0]["displayUrl"])
 
 if __name__ == '__main__':

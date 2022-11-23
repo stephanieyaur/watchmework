@@ -8,18 +8,22 @@ from parse_json import *
 from scrapewiki import *
 
 def remove_dup(resources, entities, wiki_list):
-    for i in resources:
-        for res in i['results']:
-            if "wikipedia" in res['link'] and (res['title'].split(' - ')[0] in entities or res['link'] in wiki_list):
-                i['results'].remove(res)
+    for e in resources:
+        i = 0
+        while i < len(e):
+            if "wikipedia" in e[i]['link'] and (e[i]['title'].split(' - ')[0] in entities or e[i]['link'] in wiki_list):
+                e.remove(e[i])   
                 continue
-            for j in resources[resources.index(i)+1:]:
-                for res2 in j['results']:
-                  
-
-                    if res['link'] == res2['link'] or res['title'] == res2['title']:
-                        j['results'].remove(res2)
+            for e2 in resources[resources.index(e):]:
+                i2 = 0 if e2 != e else e2.index(e[i])+1
+                while i2 < len(e2):
+                    if e[i]['link'] == e2[i2]['link'] or e[i]['title'] == e2[i2]['title']:
+                        e2.remove(e2[i2])
+                        continue
+                    i2 += 1
+            i+=1
     return resources
+
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
@@ -29,8 +33,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     doc = body['doc']
   
     topics, entities = get_analysis(doc, paragraph)
-    topics = topic_parse(topics)
-    entities = entity_parse(entities)
     entities = entities[:5]
     resources = []
     info = []
