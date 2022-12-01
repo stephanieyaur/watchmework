@@ -10,15 +10,17 @@ from scrapewiki import *
 def remove_dup(resources, entities, wiki_list):
     for e in resources:
         i = 0
-        while i < len(e):
-            if "wikipedia" in e[i]['link'] and (e[i]['title'].split(' - ')[0] in entities or e[i]['link'] in wiki_list):
-                e.remove(e[i])   
+        key = list(e.keys())[0]
+        while i < len(e[key]):
+            if "wikipedia" in e[key][i]['link'] and (e[key][i]['title'].split(' - ')[0] in entities or e[key][i]['link'] in wiki_list):
+                e[key].remove(e[key][i])   
                 continue
             for e2 in resources[resources.index(e):]:
-                i2 = 0 if e2 != e else e2.index(e[i])+1
-                while i2 < len(e2):
-                    if e[i]['link'] == e2[i2]['link'] or e[i]['title'] == e2[i2]['title']:
-                        e2.remove(e2[i2])
+                key2 = list(e2.keys())[0]
+                i2 = 0 if e2 != e else e2[key2].index(e[key][i])+1
+                while i2 < len(e2[key2]):
+                    if e[key][i]['link'] == e2[key2][i2]['link'] or e[key][i]['title'] == e2[key2][i2]['title']:
+                        e2[key2].remove(e2[key2][i2])
                         continue
                     i2 += 1
             i+=1
@@ -35,6 +37,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     topics, entities = get_analysis(doc, paragraph)
     entities = entities[:5]
     resources = []
+    resource_list = []
     info = []
     del_list = []
     wiki_links = []
@@ -50,10 +53,14 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         entities.remove(i)
 
     for e in entities:
+        resource_list = [] 
         for t in topics[:5]:
                 query = e + ' ' + t
                 results = bing_api(query)
-                resources.append(parse_js(results))
+                resource_list.extend(parse_js(results))
+        
+        resources.append({e:resource_list})
+            
     resources = remove_dup(resources, entities, wiki_links)
 
     return func.HttpResponse(
