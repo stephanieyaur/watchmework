@@ -1,0 +1,290 @@
+<link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet" />
+
+  <div style="display: flex; ">
+    <div class="tablink" style="padding-left: 10px; padding-right: 10px; border-bottom: 1px solid; border-color: blue; color: #15c; font-weight: bolder;">
+        <a style="color: inherit; text-decoration: inherit">
+          <span onclick="clickTab(event, 'summary')">Summary</span>
+        </a>
+    </div>
+    <div class="tablink" style="padding-left: 10px; padding-right: 10px; color: #7a7a7a; font-weight: normal">
+        <a style="color: inherit; text-decoration: inherit">
+          <span onclick="clickTab(event, 'resources')">Resources</span>
+        </a>
+    </div>
+  </div>
+  <div style="border: 0px; border-bottom: 0px solid; overflow-x: hidden;">
+
+  <link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet" />
+  <div class="form-group block">
+    <br/>
+
+    <div class="tabcontent" id="summary">
+      <div id="dynamicdropdowns"></div>
+    </div>
+      
+    <div class="tabcontent" id="resources" style="display: none">
+      <div id="dynamiclinks" style="overflow-x: hidden"></div>
+    </div>
+
+</div>
+
+<!-- Load the jQuery library from the Google CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script>
+
+  let run;
+  let lastText = null;
+  let lastResponse = null;
+
+  const runGoogleScriptGetText = (_) =>
+    new Promise((resolve, reject) =>
+      google.script.run
+        .withFailureHandler(reject)
+        .withSuccessHandler(resolve)
+        .getParagraph()
+    );
+
+  const getParagraph = (_) =>
+    new Promise((resolve, reject) =>
+      setTimeout(
+        async () => await runGoogleScriptGetText().then(resolve).catch(reject),
+        1000
+      )
+    );
+
+  const runGoogleScript = (textToSearch) =>
+    new Promise((resolve, reject) =>
+      google.script.run
+        .withFailureHandler(reject)
+        .withSuccessHandler(resolve)
+        .main(textToSearch)
+    );
+  const main = (textToSearch) =>
+    new Promise((resolve, reject) =>
+      setTimeout(
+        async () => await runGoogleScript(textToSearch).then(resolve).catch(reject),
+        1000
+      )
+    );
+
+  function clickTab(event, tabTitle) {
+    if (tabTitle=="summary"){
+      stop();
+    }
+    if (tabTitle=="resources"){
+      start();
+    }
+    let tabContent, tabLink, target;
+    tabContent = document.getElementsByClassName("tabcontent");
+    console.log(tabContent);
+    for (let i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    tabLink = document.getElementsByClassName("tablink");
+    console.log(tabLink)
+    for (let i = 0; i < tabLink.length; i++) {
+      tabLink[i].style = "padding-left: 10px; padding-right: 10px; color: #7a7a7a; font-weight: normal";
+    }
+    target = document.getElementById(tabTitle);
+    target.style.display = "block";
+    event.currentTarget.parentElement.parentElement.style = "padding-left: 10px; padding-right: 10px; border-bottom: 1px solid; border-color: blue; color: #15c; font-weight: bolder;";
+  }
+
+  function clickDropdown(event) {
+    if (event.currentTarget.children[1].style.display == "none") {
+      event.currentTarget.children[1].style.display = "block";
+    }
+    else{
+      event.currentTarget.children[1].style.display = "none";
+    }
+  }
+
+  function fixInfoboxStyling() {
+    // hide titles
+    let titleElements = document.getElementsByClassName("fn");
+    for (let i=0; i<titleElements.length; i++){
+      titleElements[i].style.display = "none"
+    }
+    // fix border bottoms of th
+    let tableHeaders = document.getElementsByTagName('th');
+    for (let i=0; i<tableHeaders.length; i++){
+      tableHeaders[i].style.borderBottom = "1px solid #ebebeb";
+      tableHeaders[i].style.paddingRight = "15px";
+    }
+    // make links open in new tab
+    let links = document.getElementsByTagName('a');
+    for (let i=0; i<links.length; i++){
+      // fix links so don't add googleusercontent.com src to url
+      let splitString = links[i].href.split("googleusercontent.com/");
+      if (splitString.length == 2){
+        links[i].href = "https://"+splitString[1];
+      }
+      links[i].target = "_blank";
+    }
+    // make table width 100% and display block
+    let tables = document.getElementsByTagName('table');
+    for (let i=0; i<tables.length; i++){
+      tables[i].style.width = "100%";
+      tables[i].style.display = "block";
+    }
+    // make table tbody display block
+    let tableBodies = document.getElementsByTagName('tbody');
+    for (let i=0; i<tableBodies.length; i++){
+      tableBodies[i].style.display = "block";
+      tableBodies[i].style.width = "100%";
+    }
+    // make table rows display block
+    let tableRows = document.getElementsByTagName('tr');
+    for (let i=0; i<tableRows.length; i++){
+      tableRows[i].style.display = "block";
+    }
+    // make images width 100%
+    let images = document.getElementsByTagName('img');
+    for (let i=0; i<images.length; i++){
+      images[i].style.maxWidth = "100%";
+    }
+  }
+
+  function populateDropdowns() {
+    $("#dynamicdropdowns").empty();
+    let display = "none";
+    for (let i = 0; i < lastResponse.entities.length; i++) {
+      if (i == 0){
+        display = "block;";
+      }
+      else {
+        display = "none;";
+      }
+      if (lastResponse.entities[i].infobox == "None") {
+        $("#dynamicdropdowns").append(
+            '<div class="dropdown" style="border: 1px solid; border-color: #d3d3d3; margin: 0px; cursor: pointer; padding: 5px;" id="chicago" onclick="clickDropdown(event)">'+
+            '<span style="padding-left: 10px;">'+
+              '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">'+
+              '<i class="fa fa-caret-down"></i>'+
+              '<link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet" />'+
+              lastResponse.entities[i].title +
+            '</span>'+
+            '<div class="dropdown content" style="display:'+ display + 'padding: 5px;">'+
+              '<br/>'+
+              '<a target="_blank" href="' + lastResponse.entities[i].link_to_article + '"<b style="font-size: 125%">'+lastResponse.entities[i].title+'</b></a>'+
+              '<br/>'+
+              '<span class="secondary">'+ lastResponse.entities[i].description+'</span>' +
+              '<br/>'+
+            '</div>'+
+          '</div>'
+        )
+      } else {
+          $("#dynamicdropdowns").append(
+            '<div class="dropdown" style="border: 1px solid; border-color: #d3d3d3; margin: 0px; cursor: pointer; padding: 5px;" id="chicago" onclick="clickDropdown(event)">'+
+            '<span style="padding-left: 10px;">'+
+              '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">'+
+              '<i class="fa fa-caret-down"></i>'+
+              '<link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet" />'+
+              lastResponse.entities[i].title +
+            '</span>'+
+            '<div class="dropdown content" style="display:'+ display + 'padding: 5px;">'+
+              '<br/>'+
+              '<a target="_blank" href="'+lastResponse.entities[i].link_to_article+'" ><b style="font-size: 125%">'+lastResponse.entities[i].title+'</b></a>'+
+              '<br/>'+
+              '<span class="secondary">'+ lastResponse.entities[i].description+'</span>' +
+              '<br/>'+
+              lastResponse.entities[i].infobox +
+            '</div>'+
+          '</div>'
+        )
+      }
+    }
+  }
+
+  function populateResourceDropdowns() {
+    $("#dynamiclinks").empty();
+    let display = "none";
+    for (let i = 0; i < lastResponse.results.length; i++) {
+      if (i == 0){
+        display = "block;";
+      }
+      else {
+        display = "none;";
+      }
+      let key = Object.keys(lastResponse.results[i])[0]
+      let id = i.toString();
+      $("#dynamiclinks").append(
+          '<div class="dropdown" style="border: 1px solid; border-color: #d3d3d3; margin: 0px; cursor: pointer; padding: 5px;" id="chicago" onclick="clickDropdown(event)">'+
+            '<span style="padding-left: 10px;">'+
+              '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">'+
+              '<i class="fa fa-caret-down"></i>'+
+              '<link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet" />'+
+              key +
+            '</span>'+
+            '<div class="dropdown content" style="display:'+ display + 'padding: 5px;">'+
+              '<br/>' +
+              '<div id='+id+'></div>'
+            +'</div>'
+          +'</div>'
+        )
+      populateResourceDropdownContent(i,key,id)
+    }
+  }
+
+  function populateResourceDropdownContent(i,key,id){
+    for (var j=0; j<lastResponse.results[i][key].length; j++) {
+      $('#'+id).append(
+        '<a style="color: inherit; text-decoration: inherit; font-size: smaller; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis" target="_blank" href="' + lastResponse.results[i][key][j].link + '"">' + lastResponse.results[i][key][j].link + '</a>'  +
+        '<a target="_blank" href="' + lastResponse.results[i][key][j].link + '""><b>'+ lastResponse.results[i][key][j].title + '</b></a>' + '<br/>'+
+        '<p style="margin-top: 0px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis">' + lastResponse.results[i][key][j].preview + '</p>'
+      )
+      if (j != lastResponse.results[i][key].length - 1){
+        $('#'+id).append(
+          '<br/>'
+        )
+      }
+    }
+  }
+
+  const start = async () => {
+    run = true;
+    console.log("Start.");
+    while (true) {
+      let textToSearch = await getParagraph();
+      if (lastText && textToSearch == lastText){
+        continue;
+      }
+      if (textToSearch != "" && lastText == null){
+        $( "#dynamiclinks" ).empty();
+          $('#dynamiclinks').append(
+            '<p>Loading...</p>'
+          );
+        $( "#dynamicdropdowns" ).empty();
+          $('#dynamicdropdowns').append(
+            '<p>Loading...</p>'
+          );
+      }
+      lastText = textToSearch;
+      console.log(textToSearch);
+      let jsonArr = await main(textToSearch);
+      console.log(jsonArr);
+      if (jsonArr == "No search results found") {
+        $( "#dynamiclinks" ).empty();
+        $('#dynamiclinks').append(
+          '<p>No search results found</p>'
+        );
+        $( "#dynamicdropdowns" ).empty();
+        $('#dynamicdropdowns').append(
+          '<p>No search results found</p>'
+        );
+      }
+      else if (jsonArr != "Empty string") {
+        jsonArr = JSON.parse(jsonArr);
+        lastResponse = jsonArr;
+        populateDropdowns();
+        fixInfoboxStyling();
+        populateResourceDropdowns();
+      }
+    }
+  };
+
+  const stop = (_) => (run = false);
+
+  start();
+</script>
